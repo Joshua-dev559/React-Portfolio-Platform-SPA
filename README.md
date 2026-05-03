@@ -1,5 +1,4 @@
 # React-Portfolio-Platform-SPA
-# React-Portfolio-Platform-SPA
 
 ## Features
 - Add projects dynamically
