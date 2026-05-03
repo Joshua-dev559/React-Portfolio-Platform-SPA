@@ -1,0 +1,140 @@
+@import "tailwindcss";
+ :root {
+  --bg: #f9fafb;
+  --card: #ffffff;
+  --text: #4b5563;
+  --heading: #111827;
+  --border: #e5e7eb;
+
+  --accent: #2563eb;
+  --accent-light: #eff6ff;
+
+  --shadow: 0 8px 20px rgba(0, 0, 0, 0.05);
+}
+
+/*GLOBAL */
+body {
+  margin: 0;
+  font-family: system-ui, sans-serif;
+  background: var(--bg);
+  color: var(--text);
+}
+
+/* Center container */
+.container {
+  max-width: 700px;
+  margin: 0 auto;
+  padding: 20px;
+}
+
+/*TYPOGRAPHY */
+h1 {
+  font-size: 36px;
+  font-weight: 700;
+  color: var(--heading);
+  text-align: center;
+  margin-bottom: 8px;
+}
+
+.subtitle {
+  text-align: center;
+  color: #6b7280;
+  margin-bottom: 30px;
+}
+
+/*COMPONENTS */
+@layer components {
+
+  /* SEARCH */
+  .search {
+    @apply w-full p-3 rounded-lg outline-none mb-5;
+    border: 1px solid var(--border);
+    background: white;
+  }
+
+  .search:focus {
+    border-color: var(--accent);
+    box-shadow: 0 0 0 3px var(--accent-light);
+  }
+
+  /* FORM */
+  .form {
+    display: flex;
+    flex-direction: column;
+    gap: 12px;
+    padding: 20px;
+    margin-bottom: 30px;
+    background: var(--card);
+    border: 1px solid var(--border);
+    border-radius: 12px;
+    box-shadow: var(--shadow);
+  }
+
+  .input {
+    width: 100%;
+    padding: 12px;
+    border-radius: 8px;
+    border: 1px solid var(--border);
+    outline: none;
+  }
+
+  .input:focus {
+    border-color: var(--accent);
+  }
+
+  textarea {
+    min-height: 100px;
+    resize: vertical;
+  }
+
+  /* BUTTON */
+  .btn {
+    width: fit-content;
+    padding: 10px 18px;
+    border-radius: 8px;
+    background: var(--accent);
+    color: white;
+    font-weight: 500;
+  }
+
+  .btn:hover {
+    opacity: 0.9;
+  }
+
+  /* 📦 GRID */
+  .grid-layout {
+    display: grid;
+    gap: 16px;
+  }
+
+  /* 🧾 CARD */
+  .card {
+    padding: 16px;
+    border-radius: 10px;
+    background: var(--card);
+    border: 1px solid var(--border);
+    box-shadow: var(--shadow);
+    transition: 0.3s;
+  }
+
+  .card:hover {
+    transform: translateY(-3px);
+    border-color: var(--accent);
+  }
+
+  .card-title {
+    font-weight: 600;
+    margin-bottom: 6px;
+    color: var(--heading);
+  }
+
+  .card-desc {
+    font-size: 14px;
+  }
+
+  .empty {
+    text-align: center;
+    margin-top: 20px;
+    color: #9ca3af;
+  }
+}
