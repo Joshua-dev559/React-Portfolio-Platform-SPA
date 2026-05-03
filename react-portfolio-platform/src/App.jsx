@@ -7,13 +7,13 @@ export default function App() {
   const [projects, setProjects] = useState([
     {
       id: 1,
-      title: "Portfolio Website",
+      title: "Portfolio Platform",
       description: "A personal portfolio built with React."
     },
     {
       id: 2,
-      title: "E-commerce UI",
-      description: "Online store interface design."
+      title: "Car Shipment Company",
+      description: "Online car website."
     }
   ]);
 
@@ -29,8 +29,8 @@ export default function App() {
 
   return (
     <div className="container">
-      <h1>Creative Portfolio</h1>
-      <p className="subtitle">Showcasing our latest work</p>
+      <h1>React-Portfolio Platform</h1>
+      <p className="subtitle">Listing of different projects</p>
 
       <SearchBar setSearch={setSearch} />
 

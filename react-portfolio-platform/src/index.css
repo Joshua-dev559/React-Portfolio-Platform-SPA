@@ -1,6 +1,6 @@
 @import "tailwindcss";
  :root {
-  --bg: #f9fafb;
+  --bg: #bed7ef;
   --card: #ffffff;
   --text: #4b5563;
   --heading: #111827;
@@ -101,13 +101,13 @@ h1 {
     opacity: 0.9;
   }
 
-  /* 📦 GRID */
+  /* GRID */
   .grid-layout {
     display: grid;
     gap: 16px;
   }
 
-  /* 🧾 CARD */
+  /* CARD */
   .card {
     padding: 16px;
     border-radius: 10px;
