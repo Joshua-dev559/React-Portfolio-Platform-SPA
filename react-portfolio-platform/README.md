@@ -3,7 +3,7 @@
 ## Features
 - Add projects dynamically
 - Search/filter projects
-- Responsive UI
+- Responsive User Interface
 - Component-based architecture
 
 ## Setup
